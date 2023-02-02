@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #FFFDF7;
+}
+
+/*атомарные классы*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: #FFBF00;
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+.block {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.title_area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+    letter-spacing: 0.2em;
+}
+.title_area h2 {
+    color: #212121;
+    font-size: 56px;
+    font-weight: bold;
+}
+.title_area .descr {
+    color: #FFBF00;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*основные стили (бэм)*/
+header {
+    margin-bottom: 80px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+header nav a {
+    margin-right: 64px;
+    color: #212121;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+header .cart {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+header .count {
+    /* height: 15px; */
+    background-color: #FFBF00;
+    width: 16;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    bottom: -3px;
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+#about .col .c1 {
+    display: block;
+}
+#about .title {
+    font-size: 72px;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+#about .descr {
+    font-size: 24px;
+    color: #212121;
+    letter-spacing: 0.01px;
+    margin-bottom: 48px;
+}
+#about span.s1 {
+    color: #FFBF00;
+}
+#about a.btn.s1 {
+    width: 111px;
+    padding: 16px 32px;
+}
+#about .col.c1 {
+    width: 600px;
+}
+#about .preview {
+    margin-top: -90px;
+}
+
+#service .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#service .item {
+    max-width: 280px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#service .item:before {
+    content: "";
+    display: block;
+    width: 188px;
+    height: 156px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+#service .item.c1:before {
+    background-image: url(images/service/1.svg);
+}
+#service .item.c2:before {
+    background-image: url(images/service/2.svg);
+}
+#service .item.c3:before {
+    background-image: url(images/service/3.svg);
+}
+#service .item .descr {
+    font-size: 18px;
+    color: #807F7E;
+}
+#service h3.title {
+    font-size: 32px;
+    color: #212121;
+}
+#service img {
+    margin-bottom: 40px;
+}
+
+
+
+/*  */
+
+
+svg {
+    margin-left: 10px;
+}
+
+
