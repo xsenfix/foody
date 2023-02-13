@@ -18,19 +18,18 @@ body {
     background-color: #FFBF00;
     padding: 12px 24px;
     border-radius: 16px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     color: #fff;
+    text-decoration: none;
+    letter-spacing: normal;
 }
 .block {
     margin-top: 200px;
     margin-bottom: 200px;
 }
 .title_area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: left;
     margin-bottom: 64px;
     letter-spacing: 0.2em;
 }
@@ -39,13 +38,45 @@ body {
     font-size: 56px;
     font-weight: bold;
 }
+.title_area.s1 {
+    text-align: center;
+}
 .title_area .descr {
     color: #FFBF00;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
 }
-
+.text {
+    margin-bottom: 64px;
+    letter-spacing: 0.2em;
+    text-align: left;
+}
+.text h2 {
+    color: #212121;
+    font-size: 56px;
+    font-weight: bold;
+}
+.text .descr {
+    color: #FFBF00;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+.text .title {
+    margin: 0;
+    margin-bottom: 64px;
+}
+.btn_application {
+    display: inline-block;
+    background-color: #FFBF00;
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
 /*основные стили (бэм)*/
 header {
     margin-bottom: 80px;
@@ -79,6 +110,13 @@ header .count {
     right: -6px;
     bottom: -3px;
 }
+input {
+    border-radius: 1px solid red;
+    width: 792px;
+    height: 96px;
+    border-radius: 30px;
+    border: 1px solid #2121;
+}
 
 #about .container {
     display: grid;
@@ -105,6 +143,7 @@ header .count {
 #about a.btn.s1 {
     width: 111px;
     padding: 16px 32px;
+    text-decoration: none;
 }
 #about .col.c1 {
     width: 600px;
@@ -132,13 +171,13 @@ header .count {
     margin: 0 auto;
 }
 #service .item.c1:before {
-    background-image: url(images/service/1.svg);
+    background-image: url(images/upload/service/1.svg);
 }
 #service .item.c2:before {
-    background-image: url(images/service/2.svg);
+    background-image: url(images/upload/service/2.svg);
 }
 #service .item.c3:before {
-    background-image: url(images/service/3.svg);
+    background-image: url(images/upload/service/3.svg);
 }
 #service .item .descr {
     font-size: 18px;
@@ -152,13 +191,217 @@ header .count {
     margin-bottom: 40px;
 }
 
+#menu .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+#menu .item {
+    background-color: #fff; 
+    box-shadow: 3px 18px 11px 11px;
+    border-radius: 32px;
+}
+/*#menu .row {
+    display: flex;
+}
+#menu rect {
+    display: flex;
+    flex-direction: column;
+}
+#menu svg {
+    margin-top: 60px;
+    align-items: center;
+}
+#menu .item {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+*/
 
+#reviews .wrap {
+    display: flex;
+}
+#reviews .col.c1 {
+    width: 390px;
+    height: 432px;
+    margin-right: 126px;
+}
+#reviews .col.c2 {
+    flex-grow: 1;
+}
+#reviews .person {
+    display: flex;
+    margin-bottom: 24px;
+}
+#reviews img.face {
+    margin-right: 16px;
+}
+#reviews .name {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#reviews span.number {
+    position: absolute;
+    font-size: 14px;
+}
+/*#reviews .page {
+    display: flex;
+}*/
+#reviews .testimonial-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 32px;
+    padding: 0 60px;
+    position: relative;
+}
+#reviews .testimonial-text:before,
+#reviews .testimonial-text:after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 34px;
+    position: absolute;
+}
+#reviews .testimonial-text:before {
+    background: url(images/upload/reviews/quote_open.svg);
+    top: 0;
+    left: 0;
+}
+#reviews .testimonial-text:after {
+    background: url(images/upload/reviews/quote_close.svg);
+    bottom: 0;
+    right: 0;
+}
+#reviews .page-btn {
+    padding: 12px;
+    background-color: #2121;
+    border-radius: 16px;
+    border: 0px solid white;
+    width: 48px;
+    height: 48px;
+    margin: 0 24px; 
+}
+#reviews .page-images {
+    display: flex;
+    align-items: center;
+}
 
-/*  */
+#application .container {
+    display: flex;
+    background-color: #FFF2CC;
+    padding: 100px;
+    border-radius: 64px;
+}
+#application .page-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #807F7E;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
 
+#subscribe .page-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #807F7E;
+    width: 755px;
+    letter-spacing: normal;
+}
 
-svg {
-    margin-left: 10px;
+form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_subscribe {
+    width: 186px;
+    height: 64px;
+    background-color: #FFBF00;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: absolute;
+    right: 567px;
+}
+input[type=email]::placeholder {
+	font-size: 18px;
+	color: #807F7E;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-family: Montserrat;
+    text-align: left;
+    padding-left: 32px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+#footer {
+    width: 100%;
+    height: 360px;
+    background: #FFF2CC;
+    margin: 0;
+  }
+
+
+.waves .descr {
+    font-size: 24px;
+    color: #212121;
+    font-weight: bold;
+}
+
+
+
+#footer .container {
+    display: flex;
+}
+
+#footer .waves {
+    margin-top: 100px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer a {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+svg {
+    
+}
+
+path {
+    font-size: 1px;
+
+}
